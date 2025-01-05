@@ -8,7 +8,8 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import { IoBagOutline } from "react-icons/io5";
 import { MdOutlineEvent } from "react-icons/md";
 import { FaConciergeBell } from "react-icons/fa";
-
+import { Users } from "../../dummyData";
+import CloseFriend from "../closeFriend/CloseFriend";
 const Sidebar = () => {
   return (
     <div className="sidebar">
@@ -54,54 +55,9 @@ const Sidebar = () => {
         <button className="sidebarButton">Show More</button>
         <hr className="sidebarHr" />
         <ul className="sidebarFriendList">
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
-          <li className="sidebarFriend">
-            <img className="sidebarFriendImg" src="./assets/person/2.jpeg" alt="" />
-            <span className="sidebarFriendName">Monte Cristo</span>
-          </li>
+          {Users.map((item) => (
+            <CloseFriend key={item.id} item={item} />
+          ))}
         </ul>
       </div>
     </div>

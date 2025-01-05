@@ -28,13 +28,13 @@ const Topbar = () => {
         <div className="topbarIcons">
           <div className="topbarIconItem">
             <IoPersonSharp />
-            <span className="topbarIconBadge">1</span>
+            <span className="topbarIconBadge">3</span>
           </div>
 
           <div className="topbarIconItem">
             <IoChatboxEllipses />
 
-            <span className="topbarIconBadge">1</span>
+            <span className="topbarIconBadge">2</span>
           </div>
 
           <div className="topbarIconItem">
@@ -44,7 +44,7 @@ const Topbar = () => {
           </div>
         </div>
         <img
-          src="/assets/person/1.jpeg
+          src="/assets/person/2.jpeg
         "
           alt=""
           className="topbarImg"
